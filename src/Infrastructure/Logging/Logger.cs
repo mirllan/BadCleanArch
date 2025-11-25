@@ -19,10 +19,10 @@ public static class Logger
         {
             a();
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            // aqui dejo este catch vacio porque la idea es que si falla algo en log no rompa todo
-            // esto es para que sonar no se queje de que no lo explique
+            // aqui solo logueo la excepcion para que sonar no diga nada y no rompa la app
+            Log("excepcion atrapada en Try " + ex.Message);
         }
     }
 }
