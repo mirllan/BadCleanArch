@@ -5,7 +5,7 @@ namespace Domain.Entities;
 
 public class Order
 {
-	// Encapsulado como propiedades públicas (reemplaza campos públicos).
+	// Encapsulado  como propiedades públicas (reemplaza campos públicos).
 	// Sonar pedía convertir campos públicos a propiedades.
 	public int Id { get; set; }
 	public string CustomerName { get; set; }
